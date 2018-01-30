@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html>
+<head>
+</head>
+<body style="color:white;">
+<a href="/InWhy">
+
+<button> WHY ASK FOR HELP</button>
+</a>
+<h1> Homefeed </h1>
+{% for concern in concerns%}
+
+		<div>
+			<p>
+			{{concern.username}}{{concern.concern}}
+			</p>
+		</div>
+
+	
+
+			
+			<form action ="/answer_concern" method="post">
+			<input type="text" name="answer" placeholder="Answers">
+			<input type="text" name="id" value="{{ concern.id }}" hidden>
+			<input type="submit" namPic_of_Dishe="Submit" value="submit">
+			</form>
+			
+		
+			<div>
+			<p>
+			{{concern.answer}}
+			</p>
+			</div>
+	
+{% endfor %}
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT09Rhed5hSe3k_sSRkE08Er8h5iNIk4gib66RP1r3sy4ZA8l89BQ">
+</body>
+</html>
