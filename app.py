@@ -79,7 +79,6 @@ def answer_concern():
 	return render_template('Homefeed.html', concerns=concerns)
 
 
-app.run()
 	
 db.create_all()
 
