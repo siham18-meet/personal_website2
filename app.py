@@ -9,7 +9,7 @@ import views
 
 db = SQLAlchemy(app)
 # concerns=[]1
-# class Users(db.Model):
+# class Users(db.Model):.
 # 	 __tablename__ = "Users_data"
 # 	 id= db.Column('id', db.Integer, primary_key=True)
 
