@@ -20,7 +20,7 @@ class Concern(db.Model):
     # username = db.Column(db.String(15))
     concern = db.Column(db.String(100))
     answer= db.Column(db.String(100))
-    # password= db.Column(db.String(100))
+    # password= db.Column(db.String(100)).
 
     def __init__(self,concern):
     	self.concern= concern
