@@ -81,5 +81,3 @@ def answer_concern():
 
 	
 db.create_all()
-
-import views
